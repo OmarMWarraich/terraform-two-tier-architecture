@@ -37,7 +37,7 @@ resource "aws_lb" "project_alb" {
 # Create ALB Target Group
 
 resource "aws_lb_target_group" "project_tg" {
-  name     = "project_tg"
+  name     = "project-tg"
   port     = 80
   protocol = "HTTP"
   vpc_id   = aws_vpc.vpc.id
